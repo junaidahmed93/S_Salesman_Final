@@ -1,0 +1,93 @@
+
+  
+
+<ion-view>
+    <ion-content>
+     <div class="row header-row">
+      <div class="col">
+             <img src="../admin/img/sales.png" >      
+                </div>
+        <div class="row">
+             <h2 class="h2-exta ion-home">Admin Portal</h2>
+                    <div class="col">
+                        <h4></h4>
+                    </div>
+          </div>
+        </div>
+        
+        <div class="row header-level-two">
+            <div class="col col-20 sales-sol-grid">
+            <h3>Sales Solutions</h3>
+            </div>
+            <div class="col col-10 sales-sol-grid">
+               <ul>  
+                   <li><a href=""><div class="ion-gear-b notify"></div></a></li>
+                   <li><a href=""><div class="ion-ios-bell-outline notify"></div></a></li>
+                   <li><a href=""><div class="ion-ios-email-outline notify"></div></a></li>
+               </ul>
+            </div>
+            
+            <div class="col col-10 col-offset-50">
+                <div class="pro-pic">
+                    <span>{{displayCompanyName}}</span>
+                </div>
+            </div>
+        </div>
+        
+        <!--Mian Section-->
+        <!--left Side-->
+        <div class="row main">
+            <div class="col col-20 left-menu-col">
+                <div class="row menu-left-item row-item">
+                    <a ui-sref="dashboard"> <div class="menu-left-item-set">
+                        <span class="ion-ios-speedometer-outline left-menu-icon"></span>DashBoard</div> </a>
+                </div>
+                
+                <div class="row menu-left-item row-item">
+                    <a href=""> <div class="menu-left-item-set inner-div">
+                        <span class="ion-eye left-menu-icon"></span>Stocks</div> </a>
+                </div>
+                
+                <div class="row menu-left-item row-item">
+                    <a href=""> <div class="menu-left-item-set inner-div">
+                        <span class="ion-drag left-menu-icon"></span>Orders</div> </a>
+                </div>
+                
+                <div class="row menu-left-item row-item">
+                    <a ui-sref="addCompany"> <div class="menu-left-item-set inner-div">
+                        <span class="ion-card left-menu-icon"></span>Add Company</div> </a>
+                </div>
+                <div class="row menu-left-item row-item">
+                    <a ui-sref="signupSales"> <div class="menu-left-item-set inner-div">
+                        <span class="ion-plus-circled left-menu-icon"></span>Add Salesman</div> </a>
+                </div>
+            </div>
+            <!--Main Section Right Side (CharJS)-->
+            <div class="col ">
+                <div>
+                    
+                    <div class="row header sales-data heading">
+                        <div class="col">Shop Name</div>
+                        <div class="col">Banaspati</div>
+                        <div class="col">Cooking Oil</div>
+                        <div class="col">Rice</div>
+                        <div class="col">Sugar</div>
+                        <div class="col">Status</div>
+                    </div>
+                    <div class="row sales-data" ng-repeat="order in orders">
+                        <div class="col">{{order.shopName}}</div>
+                        <div class="col">{{order.banaspati}}</div>
+                        <div class="col">{{order.cookingOil}}</div>
+                        <div class="col">{{order.rice}}</div>
+                        <div class="col">{{order.sugar}}</div>
+                        <div class="col"><button ng-click="completed(order)">Completed</button></div>
+                    </div>
+                    
+                    
+                    
+                    </div>
+                </div>
+        </div>
+        
+</ion-content>
+</ion-view>

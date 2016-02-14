@@ -1,0 +1,27 @@
+<ion-view>
+    <ion-content>
+        <div class="row ">
+            <div class="col">First Name</div>
+            <div class="col">Shop Name</div>
+            <div class="col">Address</div>
+
+        </div>
+        <div class="row " ng-repeat="retailer in allRetailers">
+            <div class="col">{{retailer.firstName}}</div>
+            <div class="col">{{retailer.shopName}}</div>
+            <div class="col">{{retailer.address}}</div>
+
+        </div>
+    </ion-content>
+    <div class="tabs tabs-icon-buttom">
+        <a class="tab-item" ui-sref="home">
+            <i class="icon ion-home"></i> Home
+        </a>
+        <a class="tab-item" ui-sref="login">
+            <i class="icon ion-log-out"></i> Log out
+        </a>
+        <a class="tab-item">
+            <i class="icon ion-gear-a"></i> Settings
+        </a>
+    </div>
+</ion-view>

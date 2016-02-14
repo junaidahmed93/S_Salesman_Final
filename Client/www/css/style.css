@@ -1,0 +1,25 @@
+/* Empty. Add your own CSS if you like */
+.center{
+    
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+.log-prob{
+    padding-right: 5px;
+}
+.forget-pass{
+    padding-left: 5px;
+}
+
+.ion-resizd{
+    font-size:98px;
+    color:#11C1F3;
+}
+
+.one{
+ padding-left: 50px;
+ 
+}
+

@@ -1,0 +1,10 @@
+{
+  "name": "test",
+  "app_id": "",
+  "proxies": [
+    {
+      "path": "/api/login",
+      "proxyUrl": "http://desolate-fjord-53844.herokuapp.com/api/login"
+    }
+  ]
+}

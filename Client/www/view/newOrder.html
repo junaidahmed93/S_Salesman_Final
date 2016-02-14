@@ -1,0 +1,42 @@
+<ion-view>
+    <ion-content class="center">
+        <form >
+            <div class="list list-inset">
+  <label class="item item-input">
+    <input type="number" placeholder="Cooking Oil" ng-model="newOrder.cookingOil">
+  </label>
+  <label class="item item-input">
+    <input type="number" placeholder="Banaspati" ng-model="newOrder.banaspati">
+  </label>
+  <label class="item item-input">
+    <input type="number" placeholder="Rice" ng-model="newOrder.rice">
+  </label>
+  <label class="item item-input">
+    <input type="number" placeholder="Sugar" ng-model="newOrder.sugar">
+  </label>
+  <label class="item item-input">
+      <select ng-model="shopName" ng-change="showSelectValue(shopName)">
+          <option ng-repeat="retailer in retailers" ng-model="newOrder.shop">{{retailer.shopName}}</option>
+      </select>
+      <!--<select name="Nothing" >
+          <option>Select One</option>
+          <option value="" ng-repeat="retailer in retailers" ng-model="newOrder.shop"
+          ng-change="changedValue(newOrder.shop)">{{retailer.shopName}}</option>
+      </select>-->
+  </label>
+  <a class="button button-calm" ng-click="saveOrder()">Done</a>
+</div>
+        </form>
+        </ion-content>
+        <div class="tabs tabs-icon-buttom">
+        <a class="tab-item" ui-sref="home">
+            <i class="icon ion-home"></i> Home
+        </a>
+        <a class="tab-item" ui-sref="login">
+            <i class="icon ion-log-out"></i> Log out
+        </a>
+        <a class="tab-item">
+            <i class="icon ion-gear-a"></i> Settings
+        </a>
+    </div>
+    </ion-view>

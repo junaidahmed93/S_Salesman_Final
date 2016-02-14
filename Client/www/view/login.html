@@ -1,0 +1,41 @@
+<ion-view>
+    <ion-content class="center">
+        <img ng-src="img/login_key.png">
+        <form ng-submit="doLogin()">
+            <div class="list">
+                <label class="item item-input">
+                    <input type="email" placeholder="Email" ng-model = "user.email">
+                </label>
+                <label class="item item-input">
+                    <input type="password" placeholder="Password" ng-model = "user.password">
+                </label>
+                <button class="button  button-calm" type="submit">
+                    Sign In
+                </button>
+
+            </div>
+        </form>
+         <div>
+            <a ui-sref="home">
+                <span class="log-prob"> Problem in Loggin </span>
+            </a>
+            <a href="#/home">
+                <span class="forget-pass"> Forget Password </span>
+            </a>
+        </div>
+       
+
+    </ion-content>
+<ion-footer-bar align-title="left" class="bar-calm">
+    <div class="buttons">
+        <button class="button">
+            <span class="ion-fork-repo"> Admin Report </span></button>
+    </div>
+    <div></div>
+    <div class="buttons" ng-click="try()">
+        <button class="button ">
+            <span class="ion-gear-b"> Setting </span></button>
+    </div>
+</ion-footer-bar>
+    </ion-content>
+</ion-view>
